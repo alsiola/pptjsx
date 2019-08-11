@@ -1,10 +1,12 @@
 import * as PPTJSX from "../lib";
 
 import { Test } from "./Slide1";
+import { Slide2 } from "./Slide2";
 
 const Deck = (
     <presentation>
         <Test />
+        <Slide2 />
     </presentation>
 );
 
