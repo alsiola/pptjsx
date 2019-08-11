@@ -28,6 +28,12 @@ const MyDeck = (
 To produce a file, use the exported `render` function, which will resolve to a pptxgenjs slideshow that
 can be saved.
 
+```
+PPTJSX.render(Deck).then(deck => {
+    deck.save("deck-filename");
+});
+```
+
 ### Data Getting
 To be useful, we're probably going to need some data, and it's probably going to be async. Because the model
 here diverges from React, in that it won't "re-render" the presentation when props change, we can't use the
