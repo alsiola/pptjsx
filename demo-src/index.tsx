@@ -6,7 +6,7 @@ import { Slide2 } from "./Slide2";
 const Deck = (
     <presentation>
         <Test />
-        <Slide2 />
+        <Slide2>awesome</Slide2>
     </presentation>
 );
 
