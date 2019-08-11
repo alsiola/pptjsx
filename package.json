@@ -1,0 +1,28 @@
+{
+    "name": "pptjsx",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "build-demo": "babel ./demo-src --out-dir ./demo-lib --extensions \".ts\" --extensions \".tsx\"",
+        "run-demo": "node demo-lib",
+        "demo": "yarn build && yarn build-demo && yarn run-demo"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+        "@babel/plugin-transform-react-jsx": "^7.3.0",
+        "@babel/preset-typescript": "^7.3.3",
+        "@types/bluebird": "^3.5.27",
+        "@types/node": "^12.7.1"
+    },
+    "dependencies": {
+        "bluebird": "^3.5.5",
+        "pptxgenjs": "^2.5.0"
+    }
+}

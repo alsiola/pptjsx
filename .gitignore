@@ -1,0 +1,5 @@
+demo-lib
+lib
+*.pptx
+node_modules
+*.log
